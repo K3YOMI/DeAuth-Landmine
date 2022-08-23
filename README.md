@@ -25,10 +25,14 @@ A simple yet effective way to detect deauthentication attacks using tcpdump and 
   
 ## ❌ Requirments
 - [Python](https://www.python.org/downloads/) || **https://www.python.org/downloads/** [packages may be required]
-- TCPDump || 
-  - Debian
-   - **sudo apt-get install tcpdump** / **sudo pacman -S tcpdump** / **yum install tcpdump -y**
-- AirCrack-NG || **sudo apt-get install aircrack-ng** / **sudo pacman -S aircrack-ng** / **sudo snap install aircrack-ng-snap --candidate**
+- TCPDump
+  - Debian - **sudo apt-get install tcpdump**
+  - Arch - **sudo pacman -S tcpdump** 
+  - RedHat - **yum install tcpdump -y**
+- AirCrack-NG
+  - Debian - **sudo apt-get install aircrack-ng**
+  - Arch - **sudo pacman -S aircrack-ng**
+  - RedHat - **sudo snap install aircrack-ng-snap --candidate**
 - Wireless Network Card (*With Monitor/Promiscuous mode and Packet Injection)
 - Sudo / Root Access
 
