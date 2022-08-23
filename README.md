@@ -36,6 +36,8 @@ A simple yet effective way to detect deauthentication attacks using tcpdump and 
 - Wireless Network Card (*With Monitor/Promiscuous mode and Packet Injection*)
 - Sudo / Root Access
 
+
+## Image Showcase [*Spoofed MAC Addresses for Showcase / My Access Points*]
 ![image](https://user-images.githubusercontent.com/54733885/186043703-e6aa781a-f1dd-4bc3-ab83-a0f2aa5d74a1.png)
 
 
