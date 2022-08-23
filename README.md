@@ -33,7 +33,7 @@ A simple yet effective way to detect deauthentication attacks using tcpdump and 
   - Debian - **sudo apt-get install aircrack-ng**
   - Arch - **sudo pacman -S aircrack-ng**
   - RedHat - **sudo snap install aircrack-ng-snap --candidate**
-- Wireless Network Card (*With Monitor/Promiscuous mode and Packet Injection)
+- Wireless Network Card (*With Monitor/Promiscuous mode and Packet Injection*)
 - Sudo / Root Access
 
 
