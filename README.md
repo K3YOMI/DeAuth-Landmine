@@ -39,7 +39,7 @@ A simple yet effective way to detect deauthentication attacks using tcpdump and 
 
 ## Image Showcase [*Spoofed MAC Addresses for Showcase / My Access Points*]
 ![image](https://user-images.githubusercontent.com/54733885/186043703-e6aa781a-f1dd-4bc3-ab83-a0f2aa5d74a1.png)
-
+**[a-zA-Z0-9]{2}:[a-zA-Z0-9]{2}:[a-zA-Z0-9]{2}:[a-zA-Z0-9]{2}:[a-zA-Z0-9]{2}:[a-zA-Z0-9]{2}** <--- Adding this later
 
 ## ❌ Disclaimer
 I am *NOT* responsible for any user that **misuses** this tool to promote or take action upon a user. :)
