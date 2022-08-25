@@ -23,19 +23,12 @@ def _init():
     p = sub.Popen(('tcpdump','-i','wlan0','-vv'), stdout=sub.PIPE)
     for row in iter(p.stdout.readline, b''):
         if "DeAuthentication" in str(row):
-            listcount = re.split('\s+', str(row))
-            MacAddressMain = ""
-            MacAddress = listcount[6]
-            MacAddress2 = listcount[15]
-            if "(" in MacAddress:
-                MacAddressMain = MacAddress.replace("(", "")
-            if "(" in MacAddress2:
-                MacAddressMain = MacAddress2.replace("(", "")
-            if IsMacAddressInLoop(MacAddressMain) == False:
+            RegExpMacAddress = re.search("[a-zA-Z0-9]{2}:[a-zA-Z0-9]{2}:[a-zA-Z0-9]{2}:[a-zA-Z0-9]{2}:[a-zA-Z0-9]{2}:[a-zA-Z0-9]{2}", str(row)) # regex to find mac address
+            if RegExpMacAddress != None and IsMacAddressInLoop(RegExpMacAddress[0]) == False:
                read_Daa = open('data.json')
                data = json.load(read_Daa)
                data.append({
-                    "BSSID": MacAddressMain,
+                    "BSSID": RegExpMacAddress[0],
                     "Time-Last-Seen": time.time()
                })
                read_Daa.close()
